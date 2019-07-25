@@ -16,8 +16,6 @@ namespace Contato
             cli.Nome = "João";
             cli.DataCadastro = new DateTime(2019, 07, 24);
 
-            
-
             Classes.Contato contato = new Classes.Contato();
             contato.Codigo = 1;
             contato.DadosContato = "6666-6666";
@@ -34,8 +32,22 @@ namespace Contato
 
             cli.Gravar();//Exemplo de Chamada na classe parcial 
 
+            //Exemplo 1 foreach - Iteração com o objeto cli.contatos 
+            foreach (Classes.Contato cont in cli.contatos)
+            {
+                Console.WriteLine(cont.Codigo);
+                Console.WriteLine(cont.DadosContato);
+                Console.WriteLine(cont.Tipo);
+            }
+            //Exemplo 2 foreach -  Busca todos os dados de todos os contatos
+            cli.contatos.ForEach(cont => Console.WriteLine(cont.DadosContato));
+
+            //Exemplo 3 foreach - Percorre todo o objeto e "grava" cada registro
+            cli.contatos.ForEach(cont => cli.Gravar());
+
 
             Console.WriteLine(cli.contatos.FirstOrDefault(x => x.Tipo == "Telefone-fixo"));
+
             Console.ReadLine();
         }
     }
