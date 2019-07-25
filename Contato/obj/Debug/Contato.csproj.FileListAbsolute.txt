@@ -1,0 +1,7 @@
+C:\cursos\VS2017\Contato\Contato\bin\Debug\Contato.exe.config
+C:\cursos\VS2017\Contato\Contato\bin\Debug\Contato.exe
+C:\cursos\VS2017\Contato\Contato\bin\Debug\Contato.pdb
+C:\cursos\VS2017\Contato\Contato\obj\Debug\Contato.csprojAssemblyReference.cache
+C:\cursos\VS2017\Contato\Contato\obj\Debug\Contato.csproj.CoreCompileInputs.cache
+C:\cursos\VS2017\Contato\Contato\obj\Debug\Contato.exe
+C:\cursos\VS2017\Contato\Contato\obj\Debug\Contato.pdb
