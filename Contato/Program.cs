@@ -16,8 +16,19 @@ namespace Contato
             cli.Nome = "João";
             cli.DataCadastro = new DateTime(2019, 07, 24);
 
-            //Exemplo de criação de objeto cli2 chamando o construtor codigo
-            Classes.Cliente cli2 = new Classes.Cliente(5);
+
+            //Quando criamos o objeto com o"using" e terminar minhas ações neste 
+            //objeto, o sistema vai automaticamente para o metodo dispose da classe cliente , sem precisar declarar explicitamente.
+            //retirando o objeto da memória
+            using (Classes.Cliente cli2 = new Classes.Cliente(5))
+            {
+                cli2.Nome = "Novo nome";
+            }
+            //Quando NÃO crio o objeto com using, eu tenho que declarar explicitamente o dispose, para destruir o objeto.
+            //Exemplo: cli4.dispose()
+            Classes.Cliente cli4 = new Classes.Cliente(5);
+            cli4.Dispose();//chama o metodo dispose da classe cliente
+            
 
             Classes.Contato contato = new Classes.Contato();
             contato.Codigo = 1;
