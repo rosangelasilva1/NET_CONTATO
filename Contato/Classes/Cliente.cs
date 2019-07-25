@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Contato.Classes
 {
-    public class Cliente
+    public partial class Cliente
     {
 
         public  int Codigo { get; set; }
