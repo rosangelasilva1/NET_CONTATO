@@ -30,6 +30,7 @@ namespace Contato
             cli.contatos.Add(contato);
             cli.contatos.Add(contato2);
 
+            Console.WriteLine(cli.contatos.FirstOrDefault(x => x.Tipo == "Telefone-fixo"));
             Console.ReadLine();
         }
     }
