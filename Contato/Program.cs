@@ -16,6 +16,9 @@ namespace Contato
             cli.Nome = "João";
             cli.DataCadastro = new DateTime(2019, 07, 24);
 
+            //Exemplo de criação de objeto cli2 chamando o construtor codigo
+            Classes.Cliente cli2 = new Classes.Cliente(5);
+
             Classes.Contato contato = new Classes.Contato();
             contato.Codigo = 1;
             contato.DadosContato = "6666-6666";

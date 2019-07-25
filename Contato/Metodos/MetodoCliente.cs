@@ -14,5 +14,17 @@ namespace Contato.Classes
         {
 
         }
+
+        //Construtor - Snippet de código para criar construtor = ctor<TAB><TAB>
+        //O primeiro construtor não deve ter parâmetro.
+        public Cliente()
+        {
+
+        }
+
+        public Cliente(int codigo)
+        {
+            //TODO para criar o procedimento de leitura baseado no prâmetro código
+        }
     }
 }
