@@ -19,12 +19,17 @@ namespace Contato
             Classes.Contato contato = new Classes.Contato();
             contato.Codigo = 1;
             contato.DadosContato = "6666-6666";
-            contato.Tipo = "Telefone";
+            contato.Tipo = "Telefone-fixo";
 
-            cli.contato = contato;
+            Classes.Contato contato2 = new Classes.Contato();
+            contato2.Codigo = 2;
+            contato2.DadosContato = "777777";
+            contato2.Tipo = "Celular";
 
-            Console.WriteLine(cli.contato.DadosContato);
-            Console.WriteLine(cli.contato.Tipo);
+            cli.contatos = new List<Classes.Contato>();
+            cli.contatos.Add(contato);
+            cli.contatos.Add(contato2);
+
             Console.ReadLine();
         }
     }

@@ -13,7 +13,11 @@ namespace Contato.Classes
         public string Nome { get; set; }
         public int Tipo { get; set; }
         public DateTime DataCadastro { get; set; }
-        public Contato contato { get; set; }
+
+        //Cria uma lista de contatos
+        public List<Contato> contatos { get; set; }
+
+
 
 
     }

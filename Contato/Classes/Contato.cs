@@ -10,5 +10,6 @@ namespace Contato.Classes
         public int Codigo { get; set; }
         public string  DadosContato{ get; set; }
         public string Tipo { get; set; }
+
    }
 }
