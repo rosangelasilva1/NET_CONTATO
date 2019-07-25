@@ -23,7 +23,7 @@ namespace Contato
 
             Classes.Contato contato2 = new Classes.Contato();
             contato2.Codigo = 2;
-            contato2.DadosContato = "777777";
+            contato2.DadosContato = "77777-77777";
             contato2.Tipo = "Celular";
 
             cli.contatos = new List<Classes.Contato>();
