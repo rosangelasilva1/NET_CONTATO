@@ -13,18 +13,19 @@ namespace Contato
 
             Classes.Cliente cli  = new Classes.Cliente();
             cli.Codigo = Convert.ToInt32("3");
-            cli.Nome = "João";
+            cli.Nome = "jOÃO".PrimeiraMaiuscula(); //Exemplo de Metodo de extensao
+            cli.Nome = "jOÃO".PrimeiraMaiuscula(false);//Exemplo de Metodo de extensao
             cli.DataCadastro = new DateTime(2019, 07, 24);
 
 
-            //Quando criamos o objeto com o"using" e terminar minhas ações neste 
-            //objeto, o sistema vai automaticamente para o metodo dispose da classe cliente , sem precisar declarar explicitamente.
-            //retirando o objeto da memória
+            //Quando criamos o objeto com o"using" e terminamos as ações neste 
+            //objeto, o sistema irá automaticamente para o método dispose da classe cliente , sem precisar declará-lo explicitamente.
+            //retirando o objeto da memória.
             using (Classes.Cliente cli2 = new Classes.Cliente(5))
             {
                 cli2.Nome = "Novo nome";
             }
-            //Quando NÃO crio o objeto com using, eu tenho que declarar explicitamente o dispose, para destruir o objeto.
+            //Quando NÃO criamos o objeto com using, temos que declarar explicitamente o método dispose, para que o objeto seja destruído.
             //Exemplo: cli4.dispose()
             Classes.Cliente cli4 = new Classes.Cliente(5);
             cli4.Dispose();//chama o metodo dispose da classe cliente
