@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Contato.Classes
+namespace ConsoleContato.Classes
 {
     public partial class Cliente
     {
 
         //public  int Codigo { get; set; }
-        public string Nome { get; set; }
-        public int Tipo { get; set; }
-        public DateTime DataCadastro { get; set; }
+        //public string Nome { get; set; }
+        //public int Tipo { get; set; }
+        //public DateTime DataCadastro { get; set; }
 
         //Cria uma lista de contatos
         public List<Contato> contatos { get; set; }
@@ -28,16 +28,43 @@ namespace Contato.Classes
 
             set {
 
-                    if (_codigo < 0 )
-                    {
-                    _codigo = 0; 
-                    }
+                    if (value < 0 )
+                        throw new ConsoleContato.Excecoes.ValidacaoException("O código deve ser maior  que zero");
                     _codigo = value;
                 }
         }
 
 
+        private string _nome;
 
+        public string Nome
+        {
+            get { return _nome; }
+            set {
+
+                if (value.Length <= 3)
+                    throw new ConsoleContato.Excecoes.ValidacaoException("O nome deve ter mais que 3 caracteres");
+                _nome = value;
+
+            }
+        }
+
+        private string _tipo;
+
+        public string Tipo
+        {
+            get { return _tipo; }
+            set { _tipo = value; }
+        }
+
+
+        private DateTime _dataCadastro;
+
+        public DateTime DataCadastro
+        {
+            get { return _dataCadastro; }
+            set { _dataCadastro = value; }
+        }
 
     }   
 }

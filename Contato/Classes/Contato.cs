@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Contato.Classes
+namespace ConsoleContato.Classes
 {
     public class Contato { 
         public int Codigo { get; set; }

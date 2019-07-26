@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Classes\Cliente.cs" />
     <Compile Include="Classes\Contato.cs" />
+    <Compile Include="Excecoes\ExcecaoCliente.cs" />
     <Compile Include="Metodos\MetodoCliente.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

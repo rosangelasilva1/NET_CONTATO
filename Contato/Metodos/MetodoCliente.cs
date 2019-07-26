@@ -24,7 +24,7 @@ public static class MetodoExtensao
 
 }
 
-namespace Contato.Classes
+namespace ConsoleContato.Classes
 
 {
     public partial class Cliente :IDisposable
